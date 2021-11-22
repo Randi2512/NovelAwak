@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="3dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".NovelDetailActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="4dp"
+            android:id="@+id/imageNovel"
+            android:src="@drawable/gambar_buku"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imageNovel"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtJudulBuku"
+                android:text="Rindu-Tere Liye"
+                android:textSize="30sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPenulis"
+                android:layout_below="@id/txtJudulBuku"
+                android:text="Author"
+                android:textSize="15sp"
+                android:textColor="@color/colorGrey"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPenerbit"
+                android:textColor="@color/colorGrey"
+                android:layout_below="@id/txtPenulis"
+                android:text="Republika"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTahunTerbit"
+                android:textColor="@color/colorGrey"
+                android:layout_below="@id/txtPenulis"
+                android:text="2020"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtKategori"
+                android:textColor="@color/colorGrey"
+                android:layout_below="@id/txtPenulis"
+                android:text="Pendidikan"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtJmlHalaman"
+                android:layout_below="@id/txtKategori"
+                android:text="135 Halaman"
+                android:textColor="@color/colorGrey"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSinopsis"
+            android:text="Sinopsis"
+            android:textColor="@color/colorGrey"
+            android:justificationMode="inter_word"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPdf"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="BACA"
+            android:textColor="@color/colorTeks"
+            android:background="@color/colorOrange"
+            />
+
+<!--            android:gravity="end"-->
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

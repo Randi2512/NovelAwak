@@ -1,0 +1,2 @@
+rootProject.name='NovelAwak'
+include ':app'
